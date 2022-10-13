@@ -1,0 +1,29 @@
+{
+  "name": "server-list-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-tools/load-files": "6.5.0",
+    "@graphql-tools/schema": "9.0.0",
+    "@graphql-tools/utils": "^8.10.1",
+    "apollo-server": "^3.10.2",
+    "dotenv": "^16.0.1",
+    "graphql": "^16.6.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.5.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "nodemon": "^2.0.19"
+  }
+}

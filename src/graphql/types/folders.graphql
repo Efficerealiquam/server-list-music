@@ -1,0 +1,19 @@
+scalar Date
+scalar Int
+
+type Folders {
+  _id: ID!
+  genderName: String!
+  createdAt: Date
+}
+
+type Query {
+  getFoldersByID(foldersID: ID): Folders!
+  getAllFolders: [Folders]
+}
+
+type Mutation {
+  createFolders(genderName: String!): Folders
+  updateFolders(foldersID:ID,genderName: String!): Folders
+  deleteFolders(foldersID: ID!): String!
+}

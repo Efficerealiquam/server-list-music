@@ -1,0 +1,18 @@
+type Song {
+  _id: ID!
+  folders:ID!
+  numberSong: Int
+  nameSong: String!
+  createdAt: Date!
+}
+
+type Query {
+  getSongByID(songID: ID): Song!
+  getAllSongs(foldersID: ID,typeSort: String): [Song]!
+}
+
+type Mutation {
+  createSong(foldersID:ID!, songName: String!): Song!
+  updateSong(songID:ID!,songName: String!): Song!
+  deleteSong(songID: ID!): String!
+}
